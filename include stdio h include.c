@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
  int main(){
+  while(1){
     printf("Enter your nick\n");
     char nick[100];
     scanf("%99s", nick);
@@ -17,6 +18,10 @@
         printf("Error: Password must be at least 8 characters long.\n");
         return 1;
     }
+    else {
+      break;
+    }
+  }
     return 0;
     }
 
